@@ -140,9 +140,10 @@ public class Main {
 		frmHangman.getContentPane().add(btnB);
 		
 		JButton btnC = new JButton("C");
-		btnC.addActionListener(new ActionListener() {
+		allButtons.add(btnC);
+;		btnC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				buttonAction(btnC, 'C');
 			}
 		});
 		btnC.setFont(new Font("Tahoma", Font.PLAIN, 9));
