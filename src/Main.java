@@ -151,120 +151,254 @@ public class Main {
 		frmHangman.getContentPane().add(btnC);
 		
 		JButton btnD = new JButton("D");
+		allButtons.add(btnD);
+		btnD.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnD, 'D');
+			}
+		});
 		btnD.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnD.setBounds(149, 307, 42, 42);
 		frmHangman.getContentPane().add(btnD);
 		
 		JButton btnE = new JButton("E");
+		allButtons.add(btnE);
 		btnE.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnE.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnE, 'E');
 			}
 		});
 		btnE.setBounds(190, 307, 42, 42);
 		frmHangman.getContentPane().add(btnE);
 		
 		JButton btnF = new JButton("F");
+		allButtons.add(btnF);
+		btnF.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnF, 'F');
+			}
+		});
 		btnF.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnF.setBounds(231, 307, 42, 42);
 		frmHangman.getContentPane().add(btnF);
 		
 		JButton btnG = new JButton("G");
+		allButtons.add(btnG);
+		btnG.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnG, 'G');
+			}
+		});
 		btnG.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnG.setBounds(272, 307, 42, 42);
 		frmHangman.getContentPane().add(btnG);
 		
 		JButton btnH = new JButton("H");
+		allButtons.add(btnH);
+		btnH.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnH, 'H');
+			}
+		});
 		btnH.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnH.setBounds(313, 307, 42, 42);
 		frmHangman.getContentPane().add(btnH);
 		
 		JButton btnI = new JButton("I");
+		allButtons.add(btnI);
+		btnI.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnI, 'I');
+			}
+		});
 		btnI.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnI.setBounds(354, 307, 42, 42);
 		frmHangman.getContentPane().add(btnI);
 		
 		JButton btnJ = new JButton("J");
+		allButtons.add(btnJ);
+		btnJ.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnJ, 'J');
+			}
+		});
 		btnJ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnJ.setBounds(395, 307, 42, 42);
 		frmHangman.getContentPane().add(btnJ);
 		
 		JButton btnK = new JButton("K");
+		allButtons.add(btnK);
+		btnK.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnK, 'K');
+			}
+		});
 		btnK.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnK.setBounds(26, 349, 42, 42);
 		frmHangman.getContentPane().add(btnK);
 		
 		JButton btnL = new JButton("L");
+		allButtons.add(btnL);
+		btnL.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnL, 'L');
+			}
+		});
 		btnL.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnL.setBounds(67, 349, 42, 42);
 		frmHangman.getContentPane().add(btnL);
 		
 		JButton btnM = new JButton("M");
+		allButtons.add(btnM);
+		btnM.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnM, 'M');
+			}
+		});
 		btnM.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnM.setBounds(108, 349, 42, 42);
 		frmHangman.getContentPane().add(btnM);
 		
 		JButton btnN = new JButton("N");
+		allButtons.add(btnN);
+		btnN.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnN, 'N');
+			}
+		});
 		btnN.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnN.setBounds(313, 349, 42, 42);
 		frmHangman.getContentPane().add(btnN);
 		
 		JButton btnO = new JButton("O");
+		allButtons.add(btnO);
+		btnO.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnO, 'O');
+			}
+		});
 		btnO.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnO.setBounds(354, 349, 42, 42);
 		frmHangman.getContentPane().add(btnO);
 		
 		JButton btnP = new JButton("P");
+		allButtons.add(btnP);
+		btnP.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnP, 'P');
+			}
+		});
 		btnP.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnP.setBounds(395, 349, 42, 42);
 		frmHangman.getContentPane().add(btnP);
 		
 		JButton btnQ = new JButton("Q");
+		allButtons.add(btnQ);
+		btnQ.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnQ, 'Q');
+			}
+		});
 		btnQ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnQ.setBounds(26, 390, 42, 42);
 		frmHangman.getContentPane().add(btnQ);
 		
 		JButton btnR = new JButton("R");
+		allButtons.add(btnR);
+		btnR.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnR, 'R');
+			}
+		});
 		btnR.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnR.setBounds(67, 390, 42, 42);
 		frmHangman.getContentPane().add(btnR);
 		
 		JButton btnS = new JButton("S");
+		allButtons.add(btnS);
+		btnS.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnS, 'S');
+			}
+		});
 		btnS.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnS.setBounds(108, 390, 42, 42);
 		frmHangman.getContentPane().add(btnS);
 		
 		JButton btnT = new JButton("T");
+		allButtons.add(btnT);
+		btnT.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnT, 'T');
+			}
+		});
 		btnT.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnT.setBounds(149, 390, 42, 42);
 		frmHangman.getContentPane().add(btnT);
 		
 		JButton btnU = new JButton("U");
+		allButtons.add(btnU);
+		btnU.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnU, 'U');
+			}
+		});
 		btnU.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnU.setBounds(190, 390, 42, 42);
 		frmHangman.getContentPane().add(btnU);
 		
 		JButton btnV = new JButton("V");
+		allButtons.add(btnV);
+		btnV.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnV, 'V');
+			}
+		});
 		btnV.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnV.setBounds(231, 390, 42, 42);
 		frmHangman.getContentPane().add(btnV);
 		
 		JButton btnW = new JButton("W");
+		allButtons.add(btnW);
+		btnW.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnW, 'W');
+			}
+		});
 		btnW.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnW.setBounds(272, 390, 42, 42);
 		frmHangman.getContentPane().add(btnW);
 		
 		JButton btnX = new JButton("X");
+		allButtons.add(btnX);
+		btnX.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnX, 'X');
+			}
+		});
 		btnX.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnX.setBounds(313, 390, 42, 42);
 		frmHangman.getContentPane().add(btnX);
 		
 		JButton btnY = new JButton("Y");
+		allButtons.add(btnY);
+		btnY.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnY, 'Y');
+			}
+		});
 		btnY.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnY.setBounds(354, 390, 42, 42);
 		frmHangman.getContentPane().add(btnY);
 		
 		JButton btnZ = new JButton("Z");
+		allButtons.add(btnZ);
+		btnZ.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buttonAction(btnZ, 'Z');
+			}
+		});
 		btnZ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnZ.setBounds(395, 390, 42, 42);
 		frmHangman.getContentPane().add(btnZ);
