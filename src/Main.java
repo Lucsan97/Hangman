@@ -85,17 +85,21 @@ public class Main {
 		textfield_searchWord.setBounds(48, 147, 147, 21);
 		panel_start.add(textfield_searchWord);
 		
+		JLabel foundChars= new JLabel("E _ _ _ A _ T");
+		foundChars.setFont(new Font("Tahoma", Font.PLAIN, 49));
+		foundChars.setBounds(26, 140, 635, 105);
+		frmHangman.getContentPane().add(foundChars);
+		
 		JButton btnStart = new JButton("Start");
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				game = new Game(textfield_searchWord.getPassword());
+				game = new Game(textfield_searchWord.getPassword(), foundChars);
 				System.out.print(game.getSearchWord());
 				for(int i = 0; i < allButtons.size(); i ++) {
 					allButtons.get(i).setVisible(true);
 				}
 				panel_start.setVisible(false);
-				btnNeu.setVisible(true);
-				
+				btnNeu.setVisible(true);	
 			}
 		});
 		btnStart.setBounds(79, 193, 89, 23);
@@ -401,11 +405,6 @@ public class Main {
 		});
 		btnZ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnZ.setBounds(395, 390, 42, 42);
-		frmHangman.getContentPane().add(btnZ);
-		
-		JLabel lblNewLabel = new JLabel("E _ _ _ A _ T");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 49));
-		lblNewLabel.setBounds(26, 140, 635, 105);
-		frmHangman.getContentPane().add(lblNewLabel);
+		frmHangman.getContentPane().add(btnZ);	
 	}
 }
