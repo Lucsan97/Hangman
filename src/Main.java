@@ -63,16 +63,18 @@ public class Main {
 		frmHangman.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmHangman.getContentPane().setLayout(null);
 		
-		
+		JPanel panel_win = new JPanel();
+		panel_win.setBounds(209, 11, 534, 98);
+		frmHangman.getContentPane().add(panel_win);
 		
 		JPanel panel_start = new JPanel();
-		panel_start.setBounds(712, 252, 248, 254);
+		panel_start.setBounds(354, 150, 248, 254);
 		panel_start.setBackground(Color.LIGHT_GRAY);
 		frmHangman.getContentPane().add(panel_start);
 		panel_start.setLayout(null);
 		
 		JLabel lblHerzlichWillkommen = new JLabel("Herzlich Willkommen");
-		lblHerzlichWillkommen.setBounds(48, 11, 154, 21);
+		lblHerzlichWillkommen.setBounds(58, 11, 154, 21);
 		lblHerzlichWillkommen.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		panel_start.add(lblHerzlichWillkommen);
 		
@@ -85,15 +87,15 @@ public class Main {
 		textfield_searchWord.setBounds(48, 147, 147, 21);
 		panel_start.add(textfield_searchWord);
 		
-		JLabel foundChars= new JLabel("E _ _ _ A _ T");
-		foundChars.setFont(new Font("Tahoma", Font.PLAIN, 49));
-		foundChars.setBounds(26, 140, 635, 105);
+		JLabel foundChars= new JLabel();
+		foundChars.setFont(new Font("Tahoma", Font.PLAIN, 40));
+		foundChars.setBounds(26, 140, 562, 105);
 		frmHangman.getContentPane().add(foundChars);
 		
 		JButton btnStart = new JButton("Start");
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				game = new Game(textfield_searchWord.getPassword(), foundChars);
+				game = new Game(textfield_searchWord.getPassword(), foundChars, panel_win);
 				System.out.print(game.getSearchWord());
 				for(int i = 0; i < allButtons.size(); i ++) {
 					allButtons.get(i).setVisible(true);
@@ -406,5 +408,7 @@ public class Main {
 		btnZ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnZ.setBounds(395, 390, 42, 42);
 		frmHangman.getContentPane().add(btnZ);	
+		
+		
 	}
 }
