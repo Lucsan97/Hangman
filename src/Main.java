@@ -52,6 +52,12 @@ public class Main {
 			button.setVisible(false);
 		}
 	}
+	
+	public void setButtonVisibility(boolean visible) {
+		for (int i = 0; i < this.allButtons.size(); i++) {
+			this.allButtons.get(i).setVisible(visible);
+		}
+	}
 
 	/**
 	 * Initialize the contents of the frame.
@@ -72,6 +78,9 @@ public class Main {
 		panel_start.setBackground(Color.LIGHT_GRAY);
 		frmHangman.getContentPane().add(panel_start);
 		panel_start.setLayout(null);
+		
+		this.setButtons();
+		this.setButtonVisibility(false);
 		
 		JLabel lblHerzlichWillkommen = new JLabel("Herzlich Willkommen");
 		lblHerzlichWillkommen.setBounds(58, 11, 154, 21);
@@ -95,15 +104,16 @@ public class Main {
 		JButton btnStart = new JButton("Start");
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				game = new Game(textfield_searchWord.getPassword(), foundChars, panel_win);
-				System.out.print(game.getSearchWord());
-				for(int i = 0; i < allButtons.size(); i ++) {
-					allButtons.get(i).setVisible(true);
+				System.out.print(textfield_searchWord.getPassword().length);
+				if(textfield_searchWord.getPassword().length > 0) {	
+					game = new Game(textfield_searchWord.getPassword(), foundChars, panel_win);
+					setButtonVisibility(false);
+					panel_start.setVisible(false);
+					btnNeu.setVisible(true);
 				}
-				panel_start.setVisible(false);
-				btnNeu.setVisible(true);	
-			}
+			}		
 		});
+			
 		btnStart.setBounds(79, 193, 89, 23);
 		panel_start.add(btnStart);
 		
@@ -114,14 +124,18 @@ public class Main {
 				textfield_searchWord.setText("");
 				textfield_searchWord.grabFocus();
 				panel_start.setVisible(true);
-				for(int i = 0; i < allButtons.size(); i ++) {
-					allButtons.get(i).setVisible(false);
-				}
+				foundChars.setVisible(false);
+				setButtonVisibility(false);
 				btnNeu.setVisible(false);
 			}
 		});
 		btnNeu.setBounds(10, 11, 145, 23);
 		frmHangman.getContentPane().add(btnNeu);
+		
+	
+	}
+	
+	private void setButtons() {
 		
 		JButton btnA = new JButton("A");
 		allButtons.add(btnA);
@@ -407,8 +421,6 @@ public class Main {
 		});
 		btnZ.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		btnZ.setBounds(395, 390, 42, 42);
-		frmHangman.getContentPane().add(btnZ);	
-		
-		
+		frmHangman.getContentPane().add(btnZ);
 	}
 }
